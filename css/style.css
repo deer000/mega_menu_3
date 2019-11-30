@@ -37,10 +37,11 @@
 	 float: left;
  }
  .nav {
-	 width: 100px;
-	 height: 50px;
+	 width: 800px;
+	 height: 100%;
 	 padding: 50px 20px 0;
 	 float:left;
+	 background: greenyellow;
  }
  
  .nav_1 {
@@ -50,11 +51,11 @@
  .nav_1 a {
 	 display: inline-block;
 	 width: 100px;
-	 height: 100%;
+	 height: 50px;
 	 float: left;
 	 text-align: center;
 	 text-decoration: none;
-	 background: greenyellow;
+	 background: skyblue;
  }
 
 .nav_1 a:hover {
@@ -62,12 +63,25 @@
 }
 .nav ul {
 	float: left;
+	position: absolute;
+	width: 100%;
+	height: 0;
+	top: 100%;
+	left: 0;
+	overflow: hidden;
+	transition: 0.5s;
+	background: skyblue;
 } 
-
+.nav_1 a:hover~ul {
+	height: 200px;
+}
  .nav ul li {
+	 display: inline-block;
 	 width: 100px;
 	 height: 200px;
 	 float: left;
-	 position: absolute;
-	 background:  greenyellow;
+ }
+ 
+ .nav ul li:first-child {
+	margin-left: 580px;
  }
